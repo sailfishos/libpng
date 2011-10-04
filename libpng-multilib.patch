@@ -1,0 +1,20 @@
+diff -Naur libpng-1.2.16.orig/scripts/libpng-config.in libpng-1.2.16/scripts/libpng-config.in
+--- libpng-1.2.16.orig/scripts/libpng-config.in	2007-01-04 14:00:25.000000000 -0500
++++ libpng-1.2.16/scripts/libpng-config.in	2007-02-12 10:25:43.000000000 -0500
+@@ -8,11 +8,11 @@
+ 
+ # Modeled after libxml-config.
+ 
+-version="@PNGLIB_VERSION@"
+-prefix="@prefix@"
+-exec_prefix="@exec_prefix@"
+-libdir="@libdir@"
+-includedir="@includedir@/libpng@PNGLIB_MAJOR@@PNGLIB_MINOR@"
++version=`pkg-config --modversion libpng`
++prefix=`pkg-config --variable prefix libpng`
++exec_prefix=`pkg-config --variable exec_prefix libpng`
++libdir=`pkg-config --variable libdir libpng`
++includedir=`pkg-config --variable includedir libpng`
+ libs="-lpng@PNGLIB_MAJOR@@PNGLIB_MINOR@"
+ all_libs="-lpng@PNGLIB_MAJOR@@PNGLIB_MINOR@ -lz -lm"
+ I_opts="-I${includedir}"
