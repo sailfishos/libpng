@@ -1,3 +1,9 @@
+* Wed Feb 08 2012 Marko Saukko <marko.saukko@gmail.com> - 1.5.8
+- Fixes MER#164: Updated to version 1.5.8
+- Dropped non merged patches:
+  - libpng-header-fix.patch
+  - libpng-pngconf.patch
+
 * Mon Jul 05 2010 Bin Gao <bin.gao@intel.com> - 1.2.44
 - Update to 1.2.44 which includes CVE fix for CVE-2010-1205 and CVE-2010-2249
 - Drop CVE-2010-0205.patch since CVE-2010-0205 is fixed in 1.2.44
