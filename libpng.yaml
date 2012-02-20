@@ -1,16 +1,16 @@
 Name: libpng
 Summary: A library of functions for manipulating PNG image format files
-Version: 1.5.8
+Version: 1.5.9
 Release: 1
 Group: System/Libraries
 License: zlib
-URL: http://www.libpng.org/pub/png/
+URL: http://www.libpng.org/pub/png/libpng.html
 Sources:
     - ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.xz
 Patches:
     - libpng-multilib.patch
     # http://sourceforge.net/projects/libpng-apng/files/
-    - libpng-1.5.8-apng.patch.gz
+    - libpng-%{version}-apng.patch.gz
 Description: |
     The libpng package contains a library of functions for creating and
     manipulating PNG (Portable Network Graphics) image format files.  PNG

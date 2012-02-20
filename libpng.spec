@@ -7,15 +7,15 @@
 
 Name:       libpng
 Summary:    A library of functions for manipulating PNG image format files
-Version:    1.5.8
+Version:    1.5.9
 Release:    1
 Group:      System/Libraries
 License:    zlib
-URL:        http://www.libpng.org/pub/png/
+URL:        http://www.libpng.org/pub/png/libpng.html
 Source0:    ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.xz
 Source100:  libpng.yaml
 Patch0:     libpng-multilib.patch
-Patch1:     libpng-1.5.8-apng.patch.gz
+Patch1:     libpng-%{version}-apng.patch.gz
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
 BuildRequires:  pkgconfig(zlib)
@@ -51,7 +51,7 @@ for developing programs using the PNG (Portable Network Graphics) library.
 
 # libpng-multilib.patch
 %patch0 -p1
-# libpng-1.5.8-apng.patch.gz
+# libpng-%{version}-apng.patch.gz
 %patch1 -p1
 # >> setup
 # << setup
