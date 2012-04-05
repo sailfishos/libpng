@@ -1,3 +1,6 @@
+* Thu Mar 05 2012 Marko Saukko <sage@merproject.org> - 1.5.10
+- Fixes MER#258: CVE-2011-3048 serious vulnerability
+
 * Mon Feb 20 2012 Marko Saukko <marko.saukko@gmail.com> - 1.5.9
 - Fixes MER#185: libpng should be upgraded to 1.5.9 due to CVE-2011-3026
 
