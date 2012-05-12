@@ -60,7 +60,11 @@ for developing programs using the PNG (Portable Network Graphics) library.
 # >> build pre
 # << build pre
 
-%configure --disable-static
+%configure --disable-static \
+%ifarch %{arm}
+    --enable-arm-neon
+%endif
+
 make %{?jobs:-j%jobs}
 
 # >> build post

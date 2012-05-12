@@ -24,6 +24,8 @@ Description: |
 PkgConfigBR:
     - zlib
 Configure: configure
+ConfigOptions:
+    - arm:--enable-arm-neon
 SubPackages:
     - Name: devel
       Summary: Development tools for programs to manipulate PNG image format files
