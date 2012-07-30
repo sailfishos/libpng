@@ -1,3 +1,6 @@
+* Mon Jul 30 2012 Amir Hassan <amir@viel-zu.org> - 1.5.12
+- Fixes MER#465 - update libpng to 1.5.12
+
 * Sat May 12 2012 Carsten Munk <carsten@merproject.org> - 1.5.10
 - On ARM, make sure to pass --enable-arm-neon to enable NEON optimizations
   in case HWCAP_NEON is passed in auxv
