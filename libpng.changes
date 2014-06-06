@@ -1,3 +1,7 @@
+* Fri Jun 06 2014 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.11
+- Upgrade to 1.6.11
+- Fixes CVE-2013-7354, CVE-2013-7353
+
 * Mon Jul 30 2012 Amir Hassan <amir@viel-zu.org> - 1.5.12
 - Fixes MER#465 - update libpng to 1.5.12
 
