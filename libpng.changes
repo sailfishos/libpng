@@ -1,3 +1,8 @@
+* Mond Dec 29 2014 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.16
+- Upgrade to 1.6.16
+- Fixes out-of-bounds memory access in png_user_version_check()
+- Fixes overflow in png_combine_row with very wide interlaced images
+
 * Fri Jun 06 2014 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.11
 - Upgrade to 1.6.11
 - Fixes CVE-2013-7354, CVE-2013-7353

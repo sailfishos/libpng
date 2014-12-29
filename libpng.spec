@@ -9,7 +9,7 @@ Name:       libpng
 # << macros
 
 Summary:    A library of functions for manipulating PNG image format files
-Version:    1.6.11
+Version:    1.6.16
 Release:    1
 Group:      System/Libraries
 License:    zlib
