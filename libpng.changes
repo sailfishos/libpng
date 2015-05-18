@@ -1,4 +1,7 @@
-* Mond Dec 29 2014 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.16
+* Mon May 18 2015 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.16
+- Fix changelog. MER#1009
+
+* Mon Dec 29 2014 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.16
 - Upgrade to 1.6.16
 - Fixes out-of-bounds memory access in png_user_version_check()
 - Fixes overflow in png_combine_row with very wide interlaced images
@@ -43,38 +46,38 @@
 * Tue Jun 16 2009 Passion Zhao <passion.zhao@intel.com> - 1.2.37-1
 - Upgrade to 1.2.37 to address CVE-2009-2042
 
-* Tue Apr 07 2009 Passion Zhao <passion.zhao@intel.com> 1.2.35
+* Tue Apr 07 2009 Passion Zhao <passion.zhao@intel.com> - 1.2.35
 - Update to latest stable 1.2.35 in 1.2.x, which fix CVE-2008-6218, CVE-2009-0040
 
-* Thu Dec 04 2008 Anas Nashif <anas.nashif@intel.com> 1.2.29
+* Thu Dec 04 2008 Anas Nashif <anas.nashif@intel.com> - 1.2.29
 - fixed changelog
 
-* Thu Dec 04 2008 Anas Nashif <anas.nashif@intel.com> 1.2.29
+* Thu Dec 04 2008 Anas Nashif <anas.nashif@intel.com> - 1.2.29
 - Fixed epoch
 
-* Thu Dec 04 2008 Arjan van de Ven <arjan@linux.intel.com> 1.2.29
+* Thu Dec 04 2008 Arjan van de Ven <arjan@linux.intel.com> - 1.2.29
 - Cleaned up the libpng packaging, removed the static library
 
-* Sat May 31 2008 Tom Lane <tgl@redhat.com> 2:1.2.29-1
+* Sat May 31 2008 Tom Lane <tgl@redhat.com> - 2:1.2.29-1
 - Update to libpng 1.2.29 (fixes low-priority security issue CVE-2008-1382)
 Related: #441839
 
-* Tue Feb 12 2008 Tom Lane <tgl@redhat.com> 2:1.2.24-1
+* Tue Feb 12 2008 Tom Lane <tgl@redhat.com> - 2:1.2.24-1
 - Update to libpng 1.2.24
 
-* Thu Oct 18 2007 Tom Lane <tgl@redhat.com> 2:1.2.22-1
+* Thu Oct 18 2007 Tom Lane <tgl@redhat.com> - 2:1.2.22-1
 - Update to libpng 1.2.22, primarily to fix CVE-2007-5269
 Related: #324771
 
-* Wed Aug 22 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-3
+* Wed Aug 22 2007 Tom Lane <tgl@redhat.com> - 2:1.2.16-3
 - Update License tag
 - Rebuild to fix Fedora toolchain issues
 
-* Wed May 23 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-2
+* Wed May 23 2007 Tom Lane <tgl@redhat.com> - 2:1.2.16-2
 - Add patch to fix CVE-2007-2445
 Related: #239542
 
-* Mon Feb 12 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-1
+* Mon Feb 12 2007 Tom Lane <tgl@redhat.com> - 2:1.2.16-1
 - Update to libpng 1.2.16
 Resolves: #211705, #216706, #227334
 - Separate libpng.a into a -static subpackage
