@@ -1,3 +1,6 @@
+* Sun Nov 15 2015 Pasi Sjöholm <pasi.sjoholm@jollamobile.com> - 1.6.19-1
+- Upgrade to 1.6.19 (CVE-2015-7981). Contributes to MER#1425.
+
 * Wed May 27 2015 Pasi Sjöholm <pasi.sjoholm@siirappi.com> - 1.6.16
 - More fixes to changelog. MER#1009
 
