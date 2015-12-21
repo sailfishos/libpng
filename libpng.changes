@@ -1,3 +1,6 @@
+* Mon Dec 21 2015 Wouter van Heijst <wouter.van.heijst@jollamobile.com> - 1.6.20-1
+- Upgrade to 1.6.20 (CVE-2015-8126). Contributes to MER#1435.
+
 * Sun Nov 15 2015 Pasi Sjöholm <pasi.sjoholm@jollamobile.com> - 1.6.19-1
 - Upgrade to 1.6.19 (CVE-2015-7981). Contributes to MER#1425.
 
