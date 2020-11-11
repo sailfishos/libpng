@@ -1,18 +1,18 @@
 Name:       libpng
-
 Summary:    A library of functions for manipulating PNG image format files
-Version:    1.6.34
+Version:    1.6.37
 Release:    1
-Group:      System/Libraries
 License:    zlib
 URL:        http://www.libpng.org/pub/png/libpng.html
-Source0:    ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.xz
+Source0:    %{name}-%{version}.tar.bz2
 Patch0:     libpng-multilib.patch
 # Current APNG patch available from http://sourceforge.net/projects/libpng-apng/files/
-Patch1:     libpng-1.6.34-apng.patch
+Patch1:     libpng-1.6.37-apng.patch
+BuildRequires:  autoconf
+BuildRequires:  libtool
+BuildRequires:  pkgconfig(zlib)
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
-BuildRequires:  pkgconfig(zlib)
 
 %description
 The libpng package contains a library of functions for creating and
@@ -27,38 +27,28 @@ files.
 
 %package devel
 Summary:    Development tools for programs to manipulate PNG image format files
-Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
-Requires:   libpng = %{version}-%{release}
-Requires:   zlib-devel
 
 %description devel
 The libpng-devel package contains header files and documentation necessary
 for developing programs using the PNG (Portable Network Graphics) library.
 
 
-
 %prep
-%setup -q -n %{name}-%{version}/upstream
-
-# libpng-multilib.patch
-%patch0 -p1
-# libpng-%{version}-apng.patch
-%patch1 -p1
+%autosetup -p1 -n %{name}-%{version}/upstream
 
 %build
-./autogen.sh
-%configure --disable-static \
-%ifarch %{arm}
-    --enable-arm-neon
-%endif
-
-make %{?jobs:-j%jobs}
-
+%reconfigure --disable-static --enable-hardware-optimizations
+%make_build
 
 %install
-rm -rf %{buildroot}
 %make_install
+
+# Tests are running too slow for ARM under qemu on OBS
+%ifarch x86_64 %{ix86}
+%check
+make check
+%endif
 
 %post -p /sbin/ldconfig
 
@@ -66,15 +56,15 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc LICENSE
+%license LICENSE
 %{_libdir}/libpng*.so.*
 
 %files devel
 %defattr(-,root,root,-)
-%doc %{_mandir}/man5/*
-%doc *.txt example.c README TODO CHANGES
+%doc libpng-manual.txt example.c TODO CHANGES
 %{_bindir}/*
 %{_includedir}/*
 %{_libdir}/libpng*.so
-%{_libdir}/pkgconfig/*
-%doc %{_mandir}/man3/*
+%{_libdir}/pkgconfig/libpng*.pc
+%{_mandir}/man3/*
+%{_mandir}/man5/*
