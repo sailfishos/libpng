@@ -1,13 +1,13 @@
 Name:       libpng
 Summary:    A library of functions for manipulating PNG image format files
-Version:    1.6.53
+Version:    1.6.54
 Release:    1
 License:    zlib
 URL:        https://github.com/sailfishos/libpng
 Source0:    %{name}-%{version}.tar.bz2
 Patch0:     libpng-multilib.patch
 # Current APNG patch available from http://sourceforge.net/projects/libpng-apng/files/
-Patch1:     libpng-1.6.53-apng.patch
+Patch1:     libpng-1.6.54-apng.patch
 BuildRequires:  autoconf
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(zlib)
