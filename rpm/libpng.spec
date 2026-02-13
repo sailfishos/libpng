@@ -1,6 +1,6 @@
 Name:       libpng
 Summary:    A library of functions for manipulating PNG image format files
-Version:    1.6.54
+Version:    1.6.55
 Release:    1
 License:    zlib
 URL:        https://github.com/sailfishos/libpng
